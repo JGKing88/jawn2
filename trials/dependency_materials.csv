@@ -1,0 +1,181 @@
+item_id,condition_id,group_id,text,question,response_true,response_distractor
+0,a,1,The nurse supervised the administrator while a patient was brought into the emergency room.,Did the nurse supervise the administrator?,Yes,No
+1,b,1,The nurse from the clinic supervised the administrator while a patient was brought into the emergency room.,Did the nurse supervise the administrator?,Yes,No
+2,c,1,The nurse who was from the clinic supervised the administrator while a patient was brought into the emergency room.,Was the nurse from the clinic?,Yes,No
+3,d,1,The administrator who the nurse supervised scolded the medic while a patient was brought into the emergency room.,Did the nurse supervise the administrator?,Yes,No
+4,e,1,The administrator who the nurse from the clinic supervised scolded the medic while a patient was brought into the emergency room.,Did the administrator scold the medic?,Yes,No
+5,f,1,The administrator who the nurse who was from the clinic supervised scolded the medic while a patient was brought into the emergency room.,Did the administrator scold the medic?,Yes,No
+6,a,2,The doorman chatted with the janitor but the manager decided not to fire him for it.,Did the manager fire the janitor for chatting with the doorman?,No,Yes
+7,b,2,The doorman at the hotel chatted with the janitor but the manager decided not to fire him for it.,Did the manager fire the doorman for chatting with the janitor?,No,Yes
+8,c,2,The doorman who was at the hotel chatted with the janitor but the manager decided not to fire him for it.,Did the manager fire the doorman for chatting with the janitor?,No,Yes
+9,d,2,The janitor who the doorman chatted with bothered a guest but the manager decided not to fire him for it.,Did the manager decide to fire the janitor?,No,Yes
+10,e,2,The janitor who the doorman at the hotel chatted with bothered a guest but the manager decided not to fire him for it.,Did the manager decide to fire the janitor?,No,Yes
+11,f,2,The janitor who the doorman who was at the hotel chatted with bothered a guest but the manager decided not to fire him for it.,Did the manager decide to fire the janitor?,No,Yes
+12,a,3,The quarterback dated the cheerleader although this hurt her reputation around school.,Did the quarterback date the cheerleader?,Yes,No
+13,b,3,The quarterback on the team dated the cheerleader although this hurt her reputation around school.,Did the quarterback date the cheerleader?,Yes,No
+14,c,3,The quarterback who was on the team dated the cheerleader although this hurt her reputation around school.,Did the quarterback date the cheerleader?,Yes,No
+15,d,3,The cheerleader who the quarterback dated snubbed the teammates although this hurt her reputation around school.,Did the cheerleader snub her teammates?,Yes,No
+16,e,3,The cheerleader who the quarterback on the team dated snubbed the teammates although this hurt her reputation around school.,Did the cheerleader date the quarterback on the team?,Yes,No
+17,f,3,The cheerleader who the quarterback who was on the team dated snubbed the teammates although this hurt her reputation around school.,Did the cheerleader snub her teammates?,Yes,No
+18,a,4,The fans loved the guitarist because he played with so much energy.,Did the fans love the guitarist?,Yes,No
+19,b,4,The fans at the concert loved the guitarist because he played with so much energy.,Did the fans at the concert love the guitarist?,Yes,No
+20,c,4,The fans who were at the concert loved the guitarist because he played with so much energy.,Did the fans at the concert love the guitarist?,Yes,No
+21,d,4,The guitarist who the fans loved injured a spectator because he played with so much energy.,Did the guitarist injure a spectator?,Yes,No
+22,e,4,The guitarist who the fans at the concert loved injured a spectator because he played with so much energy.,Did the guitarist injure a spectator?,Yes,No
+23,f,4,The guitarist who the fans who were at the concert loved injured a spectator because he played with so much energy.,Did the guitarist injure a spectator?,Yes,No
+24,a,5,The rebels captured the diplomat after they threatened to kill his family for not complying with their demands.,Did the rebels capture the diplomat?,Yes,No
+25,b,5,The rebels in the jungle captured the diplomat after they threatened to kill his family for not complying with their demands.,Did the rebels capture the diplomat?,Yes,No
+26,c,5,The rebels who were in the jungle captured the diplomat after they threatened to kill his family for not complying with their demands.,Did the rebels capture the diplomat in the jungle?,Yes,No
+27,d,5,The diplomat who the rebels captured pleaded with the villagers after they threatened to kill his family for not complying with their demands.,Did the diplomat plead with the villagers?,Yes,No
+28,e,5,The diplomat who the rebels in the jungle captured pleaded with the villagers after they threatened to kill his family for not complying with their demands.,Did the diplomat plead with the villagers?,Yes,No
+29,f,5,The diplomat who the rebels who were in the jungle captured pleaded with the villagers after they threatened to kill his family for not complying with their demands.,Did the diplomat plead with the villagers?,Yes,No
+30,a,6,The guard attacked the prisoner although he had no intention of trying to escape.,Did the prisoner try to escape?,No,Yes
+31,b,6,The guard by the gate attacked the prisoner although he had no intention of trying to escape.,Did the prisoner try to escape?,No,Yes
+32,c,6,The guard who was by the gate attacked the prisoner although he had no intention of trying to escape.,Did the guard attack the prisoner with the intention of escape?,No,Yes
+33,d,6,The prisoner who the guard attacked tackled the warden although he had no intention of trying to escape.,Did the prisoner intend to escape?,No,Yes
+34,e,6,The prisoner who the guard by the gate attacked tackled the warden although he had no intention of trying to escape.,Did the prisoner intend to escape?,No,Yes
+35,f,6,The prisoner who the guard who was by the gate attacked tackled the warden although he had no intention of trying to escape.,Did the prisoner intend to escape?,No,Yes
+36,a,7,The servant hired the cook and then left the mansion early to see a movie at the local theater.,Did the servant leave the mansion to see a movie?,Yes,No
+37,b,7,The servant in the kitchen hired the cook and then left the mansion early to see a movie at the local theater.,Did the servant leave the mansion to see a movie?,Yes,No
+38,c,7,The servant who was in the kitchen hired the cook and then left the mansion early to see a movie at the local theater.,Did the servant leave the mansion to see a movie?,Yes,No
+39,d,7,The cook who the servant hired offended the butler and then left the mansion early to see a movie at the local theater.,Did the cook leave the mansion early to see a movie?,Yes,No
+40,e,7,The cook who the servant in the kitchen hired offended the butler and then left the mansion early to see a movie at the local theater.,Did the cook leave the mansion to see a movie?,Yes,No
+41,f,7,The cook who the servant who was in the kitchen hired offended the butler and then left the mansion early to see a movie at the local theater.,Did the cook leave the mansion early to see a movie?,Yes,No
+42,a,8,The detective consulted the surgeon because the markings on the body were difficult to explain.,Did the detective consult the surgeon?,Yes,No
+43,b,8,The detective on the case consulted the surgeon because the markings on the body were difficult to explain.,Did the detective consult the surgeon about the markings on the body?,Yes,No
+44,c,8,The detective who was on the case consulted the surgeon because the markings on the body were difficult to explain.,Did the detective consult the surgeon about the markings on the body?,Yes,No
+45,d,8,The surgeon who the detective consulted questioned the coroner because the markings on the body were difficult to explain.,Did the surgeon question the coroner?,Yes,No
+46,e,8,The surgeon who the detective on the case consulted questioned the coroner because the markings on the body were difficult to explain.,Did the surgeon question the coroner?,Yes,No
+47,f,8,The surgeon who the detective who was on the case consulted questioned the coroner because the markings on the body were difficult to explain.,Did the surgeon question the coroner?,Yes,No
+48,a,9,The dragon wounded the knight although he was far too crippled to protect her.,Did the dragon wound the knight?,Yes,No
+49,b,9,The dragon in the tower wounded the knight although he was far too crippled to protect her.,Did the dragon in the tower wound the knight?,Yes,No
+50,c,9,The dragon who was in the tower wounded the knight although he was far too crippled to protect the princess.,Did the dragon in the tower wound the knight?,Yes,No
+51,d,9,The knight who the dragon wounded married the princess although he was far too crippled to protect her.,Did the knight marry the princess?,Yes,No
+52,e,9,The knight who the dragon in the tower wounded married the princess although he was far too crippled to protect her.,Did the knight marry the princess?,Yes,No
+53,f,9,The knight who the dragon who was in the tower wounded married the princess although he was far too crippled to protect her.,Did the knight marry the princess?,Yes,No
+54,a,10,The firemen apprehended the arsonist because there was a great deal of evidence pointing to his guilt.,Did the firemen apprehend the arsonist?,Yes,No
+55,b,10,The firemen at the scene apprehended the arsonist because there was a great deal of evidence pointing to his guilt.,Did the firemen apprehend the arsonist?,Yes,No
+56,c,10,The firemen who was at the scene apprehended the arsonist because there was a great deal of evidence pointing to his guilt.,Did the firemen apprehend the arsonist?,Yes,No
+57,d,10,The arsonist who the fireman apprehended obtained a lawyer because there was a great deal of evidence pointing to his guilt.,Did the arsonist obtain a lawyer?,Yes,No
+58,e,10,The arsonist who the firemen at the scene apprehended obtained a lawyer because there was a great deal of evidence pointing to his guilt.,Did the arsonist obtain a lawyer?,Yes,No
+59,f,10,The arsonist who the firemen who was at the scene apprehended obtained a lawyer because there was a great deal of evidence pointing to his guilt.,Did the arsonist obtain a lawyer?,Yes,No
+60,a,11,The audience booed the singer before the owner of the bar could remove him from the stage.,Did the audience boo the singer?,Yes,No
+61,b,11,The audience at the club booed the singer before the owner of the bar could remove him from the stage.,Did the audience boo the singer?,Yes,No
+62,c,11,The audience who was at the club booed the singer before the owner of the bar could remove him from the stage.,Did the audience boo the singer?,Yes,No
+63,d,11,The singer who the audience booed insulted the pianist before the owner of the bar could remove him from the stage.,Did the audience boo the singer?,Yes,No
+64,e,11,The singer who the audience at the club booed insulted the pianist before the owner of the bar could remove him from the stage.,Did the audience at the club boo the singer?,Yes,No
+65,f,11,The singer who the audience who was at the club booed insulted the pianist before the owner of the bar could remove him from the stage.,Did the audience boo the singer?,Yes,No
+66,a,12,The baker loathed the manager because he had instituted a new dress code for all employees.,Did the baker like the manager?,No,Yes
+67,b,12,The baker at the shop loathed the manager because he had instituted a new dress code for all employees.,Did the baker like the manager?,No,Yes
+68,c,12,The baker who was at the shop loathed the manager because he had instituted a new dress code for all employees.,Did the baker like the manager?,No,Yes
+69,d,12,The manager who the baker loathed spoke to the new pastry chef because he had instituted a new dress code for all employees.,Did the manager speak to the new pastry chef?,Yes,No
+70,e,12,The manager who the baker at the shop loathed spoke to the new pastry chef because he had instituted a new dress code for all employees.,Did the manager speak to the new pastry chef?,Yes,No
+71,f,12,The manager who the baker who was at the shop loathed spoke to the new pastry chef because he had instituted a new dress code for all employees.,Did the manager speak to the new pastry chef?,Yes,No
+72,a,13,The detective followed the gangster because the police suspected he had murdered the shopkeeper.,Did the detective follow the gangster?,Yes,No
+73,b,13,The detective at the club followed the gangster because the police suspected he had murdered the shopkeeper.,Did the detective follow the gangster because the police suspected him of murder?,Yes,No
+74,c,13,The detective who was at the club followed the gangster because the police suspected he had murdered the shopkeeper.,Did the detective follow the gangster?,Yes,No
+75,d,13,The gangster who the detective followed implicated the waitress because the police suspected he had murdered the shopkeeper.,Did the detective follow the gangster?,Yes,No
+76,e,13,The gangster who the detective at the club followed implicated the waitress because the police suspected he had murdered the shopkeeper.,Did the detective follow the gangster at the club?,Yes,No
+77,f,13,The gangster who the detective who was at the club followed implicated the waitress because the police suspected he had murdered the shopkeeper.,Did the police suspect the gangster of murdering the shopkeeper?,Yes,No
+78,a,14,The lawyer scolded the engineer but nobody listened to his complaints.,Did the lawyer scold the engineer?,Yes,No
+79,b,14,The lawyer by the elevator scolded the engineer but nobody listened to his complaints.,Did the lawyer scold the engineer?,Yes,No
+80,c,14,The lawyer who was by the elevator scolded the engineer but nobody listened to his complaints.,Did the lawyer scold the engineer?,Yes,No
+81,d,14,The engineer who the lawyer scolded blamed the secretary but nobody listened to his complaints.,Did the engineer blame the secretary?,Yes,No
+82,e,14,The engineer who the lawyer by the elevator scolded blamed the secretary but nobody listened to his complaints.,Did the engineer blame the secretary?,Yes,No
+83,f,14,The engineer who the lawyer who was by the elevator scolded blamed the secretary but nobody listened to his complaints.,Did the engineer blame the secretary?,Yes,No
+84,a,15,The students studied the surgeon whenever he performed an important operation.,Did the students study the surgeon during important operations?,Yes,No
+85,b,15,The students at the operation studied the surgeon whenever he performed an important operation.,Did the students study the surgeon during important operations?,Yes,No
+86,c,15,The students who were at the operation studied the surgeon whenever he performed an important operation.,Did the students study the surgeon during important operations?,Yes,No
+87,d,15,The surgeon who the students studied whispered to the nurse whenever he performed an important operation.,Did the surgeon whisper to the nurse during important operations?,Yes,No
+88,e,15,The surgeon who the students at the operation studied whispered to the nurse whenever he performed an important operation.,Did the surgeon whisper to the nurse during important operations?,Yes,No
+89,f,15,The surgeon who the students who were at the operation studied whispered to the nurse whenever he performed an important operation.,Did the surgeon whisper to the nurse during important operations?,Yes,No
+90,a,16,The mathematician baffled the philosopher although she rarely needed anyone else's help.,Did the mathematician often need help from others?,No,Yes
+91,b,16,The mathematician at the banquet baffled the philosopher although she rarely needed anyone else's help.,Did the mathematician need help from others often?,No,Yes
+92,c,16,The mathematician who was at the banquet baffled the philosopher although she rarely needed anyone else's help.,Did the mathematician need help from others often?,No,Yes
+93,d,16,The philosopher who the mathematician baffled consulted a colleague although she rarely needed anyone else's help.,Did the philosopher often need help from others?,No,Yes
+94,e,16,The philosopher who the mathematician at the banquet baffled consulted a colleague although she rarely needed anyone else's help.,Did the philosopher consult a colleague?,Yes,No
+95,f,16,The philosopher who the mathematician who was at the banquet baffled consulted a colleague although she rarely needed anyone else's help.,Did the philosopher consult a colleague?,Yes,No
+96,a,17,The customer contacted the operator because the new long-distance pricing plan was extremely inconvenient.,Did the customer contact the operator about the new long-distance pricing plan?,Yes,No
+97,b,17,The customer on the phone contacted the operator because the new long-distance pricing plan was extremely inconvenient.,Did the customer contact the operator about the long-distance pricing plan?,Yes,No
+98,c,17,The customer who was on the phone contacted the operator because the new long-distance pricing plan was extremely inconvenient.,Did the customer contact the operator about the long-distance pricing plan?,Yes,No
+99,d,17,The operator who the customer contacted notified the supervisor because the new long-distance pricing plan was extremely inconvenient.,Did the operator notify the supervisor?,Yes,No
+100,e,17,The operator who the customer on the phone contacted notified the supervisor because the new long-distance pricing plan was extremely inconvenient.,Did the operator notify the supervisor?,Yes,No
+101,f,17,The operator who the customer who was on the phone contacted notified the supervisor on the phone because the new long-distance pricing plan was extremely inconvenient.,Did the operator notify the supervisor about the new long-distance pricing plan?,Yes,No
+102,a,18,The readers supported the cartoonist because she thought that censorship was never appropriate.,Did the readers support the cartoonist because she believed censorship was appropriate?,No,Yes
+103,b,18,The readers from the university supported the cartoonist because she thought that censorship was never appropriate.,Did the readers from the university support the cartoonist?,Yes,No
+104,c,18,The readers who were from the university supported the cartoonist because she thought that censorship was never appropriate.,Did the readers from the university support the cartoonist?,Yes,No
+105,d,18,The cartoonist who the readers supported pressured the dean because she thought that censorship was never appropriate.,Did the cartoonist believe that censorship was appropriate?,No,Yes
+106,e,18,The cartoonist who the readers from the university supported pressured the dean because she thought that censorship was never appropriate.,Did the cartoonist think that censorship was appropriate?,No,Yes
+107,f,18,The cartoonist who the readers who were from the university supported pressured the dean because she thought that censorship was never appropriate.,Did the cartoonist think that censorship was appropriate?,No,Yes
+108,a,19,The police arrested the hippies while the last act was going on stage.,Did the police arrest the hippies before the last act went on stage?,No,Yes
+109,b,19,The police at the concert arrested the hippies while the last act was going on stage.,Did the police arrest the hippies at the concert?,Yes,No
+110,c,19,The police who were at the concert arrested the hippies while the last act was going on stage.,Did the police arrest the hippies at the concert?,Yes,No
+111,d,19,The hippies who the police arrested complained to the officials while the last act was going on stage.,Did the hippies complain to the officials?,Yes,No
+112,e,19,The hippies who the police at the concert arrested complained to the officials while the last act was going on stage.,Did the hippies complain to the officials after being arrested?,Yes,No
+113,f,19,The hippies who the police who were at the concert arrested complained to the officials while the last act was going on stage.,Did the hippies complain to the officials?,Yes,No
+114,a,20,The boy captured the spider since it was larger than the average spider.,Did the boy capture the spider because it was larger than average?,Yes,No
+115,b,20,The boy in the yard captured the spider since it was larger than the average spider.,Did the boy capture the spider because it was larger than average?,Yes,No
+116,c,20,The boy who was in the yard captured the spider since it was larger than the average spider.,Did the boy capture the spider because it was larger than average?,Yes,No
+117,d,20,The spider that the boy captured scared the dog since it was larger than the average spider.,Was the spider larger than the average spider?,Yes,No
+118,e,20,The spider that the boy in the yard captured scared the dog since it was larger than the average spider.,Did the boy capture a spider in the yard?,Yes,No
+119,f,20,The spider that the boy who was in the yard captured scared the dog since it was larger than the average spider.,Did the boy capture a spider?,Yes,No
+120,a,21,The bully punched the kid after all the kids had to leave to go to class.,Did the bully punch the kid before the kids left for class?,No,Yes
+121,b,21,The bully on the playground punched the kid after all the kids had to leave to go to class.,Did the bully punch the kid before the kids left for class?,No,Yes
+122,c,21,The bully who was on the playground punched the kid after all the kids had to leave to go to class.,Did the bully punch the kid before the other kids left for class?,No,Yes
+123,d,21,The kid that the bully punched found the teacher after all the kids had to leave to go to class.,Did the kid find the teacher after all the kids left for class?,Yes,No
+124,e,21,The kid that the bully on the playground punched found the teacher after all the kids had to leave to go to class.,Did the kid find the teacher after being punched by the bully?,Yes,No
+125,f,21,The kid that the bully who was on the playground punched found the teacher after all the kids had to go to class.,Did the kid find the teacher after all the kids had to go to class?,Yes,No
+126,a,22,The natives captured the anthropologist because she had information that could help the tribe.,Did the natives capture the anthropologist for her information?,Yes,No
+127,b,22,The natives on the island captured the anthropologist because she had information that could help the tribe.,Did the natives capture the anthropologist for her information?,Yes,No
+128,c,22,The natives who were on the island captured the anthropologist because she had information that could help the tribe.,Did the natives capture the anthropologist?,Yes,No
+129,d,22,The anthropologist who the natives captured talked to the chief because she had information that could help the tribe.,Did the anthropologist talk to the chief?,Yes,No
+130,e,22,The anthropologist who the natives on the island captured talked to the chief because she had information that could help the tribe.,Did the anthropologist talk to the chief?,Yes,No
+131,f,22,The anthropologist who the natives who were on the island captured talked to the chief because she had information that could help the tribe.,Did the anthropologist talk to the chief?,Yes,No
+132,a,23,The scientists studied the alien while the blood sample was run through the computer.,Did the scientists study the alien?,Yes,No
+133,b,23,The scientists in the lab studied the alien while the blood sample was run through the computer.,Did the scientists study the alien in the lab?,Yes,No
+134,c,23,The scientists who were in the lab studied the alien while the blood sample was run through the computer.,Did the scientists study the alien?,Yes,No
+135,d,23,The alien who the scientists studied killed an assistant while the blood sample was run through the computer.,Did the alien kill an assistant?,Yes,No
+136,e,23,The alien who the scientists in the lab studied killed an assistant while the blood sample was run through the computer.,Did the alien kill an assistant?,Yes,No
+137,f,23,The alien who the scientists who were in the lab studied killed an assistant while the blood sample was run through the computer.,Did the alien kill an assistant?,Yes,No
+138,a,24,The police arrested the biker since he was driving under the influence of alcohol.,Did the police arrest the biker for driving under the influence of alcohol?,Yes,No
+139,b,24,The police at the intersection arrested the biker since he was driving under the influence of alcohol.,Did the police arrest the biker for driving under the influence of alcohol?,Yes,No
+140,c,24,The police who were at the intersection arrested the biker since he was driving under the influence of alcohol.,Did the police arrest the biker for driving under the influence of alcohol?,Yes,No
+141,d,24,The biker who the police arrested ran a light since he was driving under the influence of alcohol.,Did the biker run a light while driving under the influence of alcohol?,Yes,No
+142,e,24,The biker who the police at the intersection arrested ran a light since he was driving under the influence of alcohol.,Did the biker run a light?,Yes,No
+143,f,24,The biker who the police who were at the intersection arrested ran a light since he was driving under the influence of alcohol.,Did the biker run a light?,Yes,No
+144,a,25,The demonstrators supported the environmentalist until security came and sent everyone home.,Did the demonstrators support the environmentalist?,Yes,No
+145,b,25,The demonstrators at the rally supported the environmentalist until security came and sent everyone home.,Did the demonstrators at the rally support the environmentalist?,Yes,No
+146,c,25,The demonstrators who were at the rally supported the environmentalist until security came and sent everyone home.,Did the demonstrators support the environmentalist at the rally?,Yes,No
+147,d,25,The environmentalist who the demonstrators supported the crowd until security came and sent everyone home.,Did the demonstrators support the environmentalist?,Yes,No
+148,e,25,The environmentalist who the demonstrators at the rally supported calmed the crowd until security came and sent everyone home.,Did the environmentalist calm the crowd?,Yes,No
+149,f,25,The environmentalist who the demonstrators who were at the rally supported calmed the crowd until security came and sent everyone home.,Did the environmentalist calm the crowd?,Yes,No
+150,a,26,The journalists worshipped the astronaut after he discovered a potential leak in the fuel tank.,Did the journalists admire the astronaut?,Yes,No
+151,b,26,The journalists at the launch worshipped the astronaut after he discovered a potential leak in the fuel tank.,Did the journalists worship the astronaut?,Yes,No
+152,c,26,The journalists who were at the launch worshipped the astronaut after he discovered a potential leak in the fuel tank.,Did the journalists worship the astronaut?,Yes,No
+153,d,26,The astronaut that the journalists worshipped criticized the administrators after he discovered a potential leak in the fuel tank.,Did the astronaut criticize the administrators?,Yes,No
+154,e,26,The astronaut that the journalists at the launch worshipped criticized the administrators after he discovered a potential leak in the fuel tank.,Did the astronaut criticize the administrators?,Yes,No
+155,f,26,The astronaut that the journalists who were at the launch worshipped criticized the administrators after he discovered a potential leak in the fuel tank.,Did the astronaut criticize the administrators?,Yes,No
+156,a,27,The casino hired the daredevil because he was confident that everything would go according to plan.,Did the casino hire the daredevil?,Yes,No
+157,b,27,The casino near the jump hired the daredevil because he was confident that everything would go according to plan.,Did the casino hire the daredevil?,Yes,No
+158,c,27,The casino that was near the jump hired the daredevil because he was confident that everything would go according to plan.,Did the casino hire the daredevil?,Yes,No
+159,d,27,The daredevil who the casino hired waved to the crowd because he was confident that everything would go according to plan.,Did the daredevil wave to the crowd?,Yes,No
+160,e,27,The daredevil who the casino near the jump hired waved to the crowd because he was confident that everything would go according to plan.,Did the daredevil wave to the crowd?,Yes,No
+161,f,27,The daredevil who the casino that was near the jump hired waved to the crowd because he was confident that everything would go according to plan.,Did the daredevil wave to the crowd?,Yes,No
+162,a,28,The technician repaired the robot while people were taking a break for coffee.,Did the technician repair the robot during a coffee break?,Yes,No
+163,b,28,The technician at the show repaired the robot while people were taking a break for coffee.,Did the technician repair the robot during the coffee break?,Yes,No
+164,c,28,The technician who was at the show repaired the robot while people were taking a break for coffee.,Did the technician repair the robot during the coffee break?,Yes,No
+165,d,28,The robot that the technician repaired surveyed the crowd while people were taking a break for coffee.,Did the robot survey the crowd?,Yes,No
+166,e,28,The robot that the technician at the show repaired surveyed the crowd while people were taking a break for coffee.,Did the technician repair the robot at the show?,Yes,No
+167,f,28,The robot that the technician who was at the show repaired surveyed the crowd while people were taking a break for coffee.,Did the robot survey the crowd?,Yes,No
+168,a,29,The woman hired the plumber despite the fact that he couldn't fix the toilet.,Did the woman hire the plumber because he could fix the toilet?,No,Yes
+169,b,29,The woman in the apartment hired the plumber despite the fact that he couldn't fix the toilet.,Did the woman hire the plumber because he could fix the toilet?,No,Yes
+170,c,29,The woman who was in the apartment hired the plumber despite the fact that he couldn't fix the toilet.,Did the woman hire the plumber because he could fix the toilet?,No,Yes
+171,d,29,The plumber who the woman hired fixed the sink despite the fact that he couldn't fix the toilet.,Did the plumber fix the sink?,Yes,No
+172,e,29,The plumber who the woman in the kitchen hired fixed the sink despite the fact that he couldn't fix the toilet.,Did the plumber fix the sink?,Yes,No
+173,f,29,The plumber who the woman who was in the kitchen hired fixed the sink despite the fact that he couldn't fix the toilet.,Did the plumber fix the sink?,Yes,No
+174,a,30,The historian offended the speaker after the talk was over and everyone had left the room.,Did the historian offend the speaker before the talk was over?,No,Yes
+175,b,30,The historian by the podium offended the speaker after the talk was over and everyone had left the room.,Did the historian offend the speaker before the talk was over?,No,Yes
+176,c,30,The historian who was by the podium offended the speaker after the talk was over and everyone had left the room.,Did the historian offend the speaker before the talk was over?,No,Yes
+177,d,30,The speaker who the historian offended kicked a chair after the talk was over and everyone had left the room.,Did the speaker kick a chair after the talk was over?,Yes,No
+178,e,30,The speaker who the historian by the podium offended kicked a chair after the talk was over and everyone had left the room.,Did the speaker kick a chair after the talk was over?,Yes,No
+179,f,30,The speaker who the historian who was by the podium offended kicked a chair after the talk was over and everyone had left the room.,Did the speaker kick a chair after the talk was over?,Yes,No

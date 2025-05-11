@@ -23,7 +23,7 @@
           <b>What is being investigated?</b> You are being asked to take part in
           a research study being done at the Massachusetts Institute of
           Technology. This study will help us learn about how people read. It
-          will take you around 20 minutes to complete. <br /><br />
+          will take you around 15 minutes to complete. <br /><br />
 
           <b>Who can participate?</b> You can participate only if you are an
           adult native speaker of English. <br /><br />
@@ -131,15 +131,7 @@
 
     <InstructionScreen :title="'Instructions'">
       <p>
-        As you read, you may notice that some of the sentences contain mistakes.
-        An error could be a grammar error, typo, missing/extra words, etc.
-      </p>
-      <p>
-        After reading each sentence, you will be asked whether the sentence
-        contained any mistakes. Indicate your choice by pressing the appropriate
-        button. Note: for the purposes of this study, everything is in lower
-        case. Please don't mark something as wrong if capitalization is the only
-        issue.
+        After reading each sentence, you will be asked a simple yes/no question about it to move on.
       </p>
       <p>Press the button to start the study.</p>
     </InstructionScreen>
@@ -158,6 +150,11 @@
               type="hidden"
               class="condition_id"
               :value="trial.condition_id"
+            />
+            <input
+              type="hidden"
+              class="group_id"
+              :value="trial.group_id"
             />
           </form>
           <div class="oval-cursor"></div>
@@ -203,15 +200,16 @@
           </div>
 
           <div v-if="!showFirstDiv" class="userInput">
-            <p>
-              Please indicate whether the sentence was OK or whether you think
-              it contained an error. You can also indicate that you're not sure.
-              Remember, please disregard capitalization.
-            </p>
-            <MultipleChoiceInput
-              :response.sync="$magpie.measurements.response"
-              :options="['I noticed an error', 'Not sure', 'Sentence was OK']"
-            />
+            <template>
+              <form>
+                <!-- comprehension questions and the response options -->
+                <div>{{ trial.question }}</div>
+                <template v-for='(word, index) of [trial.response_true, trial.response_distractor]'>
+                  <input :id="'opt_'+index" type="radio" :value="word" name="opt" v-model="$magpie.measurements.response"/>{{ word }}<br/>
+                    <!-- <label :for="'opt_'+index"> {{ word }}&nbsp</label> -->
+                </template>
+              </form>
+            </template>
           </div>
 
           <button
@@ -224,6 +222,7 @@
               $magpie.addTrialData({
                 TrialId: i,
                 ItemId: trial.item_id,
+                GroupId: trial.group_id,
                 Condition: trial.condition_id,
                 Experiment: trial.experiment_id,
                 TrialText: trial.text,
@@ -235,7 +234,8 @@
               const data_filt = data.filter(
                 (obj) =>
                   Number(obj.ItemId) === trial.item_id &&
-                  obj.Condition === trial.condition_id
+                  obj.Condition === trial.condition_id &&
+                  obj.GroupId === trial.group_id
               );
               data_filt[0].SubjectId = subject_id;
 
@@ -266,13 +266,6 @@
       />
       <br />
       <br />
-      <p>
-        What did you think about the experiment? Please describe how hard or
-        easy the task felt, anything you noticed about the sentences, or any
-        other thoughts you have. If anything was confusing or frustrating,
-        please feel free to let us know!
-      </p>
-      <TextareaInput :response.sync="$magpie.measurements.response" />
 
       <button
         style="bottom: 30%; transform: translate(-50%, -50%)"
@@ -307,13 +300,15 @@
 
     <Screen :title="'Study Complete'">
       <p class="selectable-text" style="font-size: 24px">Completion Code:</p>
-      <p class="selectable-text" style="font-size: 24px">C101RMLG</p>
+      <p class="selectable-text" style="font-size: 24px">C9EL904F</p>
     </Screen>
   </Experiment>
 </template>
 
 <script>
 // Load data from csv files as javascript arrays with objects
+import list from "../trials/dependency_materials.csv";
+import practice from "../trials/practice.csv";
 import list1 from "../trials/motr_materials.csv";
 import fillers from "../trials/motr_fillers.csv";
 import _ from "lodash";
@@ -323,65 +318,95 @@ export default {
   data() {
     const showImages = false;
 
-    // Create an array with 4 repeats of each value
-    const implausibleConditions = _.flatMap(
-      [
-        // "1_short_implausible",
-        // "2_short_implausible",
-        "1_long_implausible",
-        "2_long_implausible",
-      ],
-      (value) => _.times(4, () => value)
-    );
-
-    const plausibleConditions = _.flatMap(
-      [
-        // "1_short_plausible",
-        // "2_short_plausible",
-        "1_long_plausible",
-        "2_long_plausible",
-      ],
-      (value) => _.times(13, () => value)
-    );
-
-    const shuffledConditions = _.shuffle(
-      implausibleConditions.concat(plausibleConditions)
-    );
-
-    const updatedItems = _.shuffle(list1).map((trial, idx) => {
-      var col = shuffledConditions[idx];
-      return {
-        ...trial,
-        item_id: trial["Item"],
-        text: trial[col],
-        condition_id: col,
-        experiment_id: "ncgp",
-      };
-    });
-
-    const updatedFillers = fillers.map((trial, idx) => {
-      return {
-        item_id: trial["Item"],
-        text: trial["Sentence"],
-        condition_id: "filler",
-        experiment_id: "ncgp",
-      };
-    });
-
-    // get five clean fillers to ensure we show first -- removes them from the original list
-    const updatedFillersCleanPreview = updatedFillers.splice(6, 5);
-
-    // console.log(updatedFillers);
-
-    const updatedShuffledItems = updatedFillersCleanPreview.concat(
-      _.shuffle(updatedItems.concat(updatedFillers))
-    );
-    // const updatedShuffledItems = updatedFillersCleanPreview.concat(
-    //   _.sampleSize(_.shuffle(updatedItems.concat(updatedFillers)), 5)
+    // // Create an array with 4 repeats of each value
+    // const implausibleConditions = _.flatMap(
+    //   [
+    //     // "1_short_implausible",
+    //     // "2_short_implausible",
+    //     "1_long_implausible",
+    //     "2_long_implausible",
+    //   ],
+    //   (value) => _.times(4, () => value)
     // );
 
-    // debugging
-    // console.log(updatedShuffledItems);
+    // const plausibleConditions = _.flatMap(
+    //   [
+    //     // "1_short_plausible",
+    //     // "2_short_plausible",
+    //     "1_long_plausible",
+    //     "2_long_plausible",
+    //   ],
+    //   (value) => _.times(13, () => value)
+    // );
+
+    // const shuffledConditions = _.shuffle(
+    //   implausibleConditions.concat(plausibleConditions)
+    // );
+
+    // const updatedItems = _.shuffle(list1).map((trial, idx) => {
+    //   var col = shuffledConditions[idx];
+    //   return {
+    //     ...trial,
+    //     item_id: trial["Item"],
+    //     text: trial[col],
+    //     condition_id: col,
+    //     experiment_id: "ncgp",
+    //   };
+    // });
+
+    // const updatedFillers = fillers.map((trial, idx) => {
+    //   return {
+    //     item_id: trial["Item"],
+    //     text: trial["Sentence"],
+    //     condition_id: "filler",
+    //     experiment_id: "ncgp",
+    //   };
+    // });
+
+    // // get five clean fillers to ensure we show first -- removes them from the original list
+    // const updatedFillersCleanPreview = updatedFillers.splice(6, 5);
+
+    // // console.log(updatedFillers);
+
+    // const updatedShuffledItems = updatedFillersCleanPreview.concat(
+    //   _.shuffle(updatedItems.concat(updatedFillers))
+    // );
+    // // const updatedShuffledItems = updatedFillersCleanPreview.concat(
+    // //   _.sampleSize(_.shuffle(updatedItems.concat(updatedFillers)), 5)
+    // // );
+
+    // // debugging
+    // // console.log(updatedShuffledItems);
+
+    // make a subset of the list that randomly selects one item of each item_id
+    const list_subset = _.chain(list)
+      .groupBy('group_id')
+      .map((group, group_id) => {
+        const randomItem = _.sample(group);
+        return {
+          ...randomItem,
+          group_id: group_id
+        };
+      })
+      .value();
+
+    const items = _.shuffle(list_subset);
+
+    // just cut it to four
+    // const items = items.
+
+    const updatedShuffledItems = items.map((item, idx) => {
+      return {
+        item_id: item["item_id"],
+        group_id: item["group_id"],
+        text: item["text"],
+        condition_id: item["condition_id"],
+        experiment_id: "ld",
+        question: item["question"],
+        response_true: item["response_true"],
+        response_distractor: item["response_distractor"],
+      };
+    });
 
     return {
       isCursorMoving: false,
@@ -419,6 +444,7 @@ export default {
           $magpie.addTrialData({
             Experiment: this.$el.querySelector(".experiment_id").value,
             Condition: this.$el.querySelector(".condition_id").value,
+            GroupId: this.$el.querySelector(".group_id").value,
             ItemId: this.$el.querySelector(".item_id").value,
             Index: this.currentIndex,
             Word: currentElement.innerHTML,
@@ -437,6 +463,7 @@ export default {
           $magpie.addTrialData({
             Experiment: this.$el.querySelector(".experiment_id").value,
             Condition: this.$el.querySelector(".condition_id").value,
+            GroupId: this.$el.querySelector(".group_id").value,
             ItemId: this.$el.querySelector(".item_id").value,
             Index: this.currentIndex,
             mousePositionX: this.mousePosition.x,
